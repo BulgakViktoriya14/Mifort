@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  cursor: default; }
+  body .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0; }
+
+h1, h3 {
+  font-weight: normal; }
+
+button {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+
+.main-part {
+  background-image: url("../image/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  .main-part .header {
+    padding: 30px 150px; }
+  .main-part .logo, .main-part .login-account {
+    display: inline-block; }
+  .main-part .logo {
+    float: left; }
+  .main-part .login-account {
+    float: right; }
+    .main-part .login-account a {
+      margin-left: 15px; }
+  .main-part .menu {
+    display: block;
+    padding: 50px 0; }
+    .main-part .menu .menu-button {
+      float: right;
+      cursor: pointer;
+      display: inline-block;
+      height: 50px;
+      width: 50px; }
+    .main-part .menu .burger-menu {
+      background-image: url(../image/menu.png); }
+    .main-part .menu .close-menu {
+      background-image: url(../image/close.png); }
+    .main-part .menu ul {
+      display: none;
+      float: left;
+      margin-left: 600px; }
+    .main-part .menu .menu-item {
+      display: inline-block;
+      list-style: none;
+      cursor: pointer;
+      padding: 15px; }
+    .main-part .menu a {
+      color: black;
+      font-weight: bold; }
+    .main-part .menu .fix-menu {
+      display: inline-block;
+      margin-left: 200px;
+      position: absolute;
+      top: 25px; }
+    .main-part .menu .no-button {
+      display: none; }
+  .main-part .fix-header {
+    top: 0;
+    height: 100px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+  .main-part .caption {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.75em; }
+  .main-part .about {
+    width: 350px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 50px; }
+    .main-part .about button {
+      margin-left: 25%; }
+    .main-part .about h6 {
+      text-align: center;
+      margin-left: 25%;
+      margin-top: 20px;
+      width: 150px; }
+  .main-part #scroll {
+    margin-top: 380px;
+    margin-left: 45%; }
+    .main-part #scroll:hover {
+      opacity: 0.5; }
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(8%); }
+  100% {
+    transform: translateY(0%); } }
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%); }
+  50% {
+    -webkit-transform: translateY(8%); }
+  100% {
+    -webkit-transform: translateY(0%); } }
+.part-one {
+  margin-top: 5%; }
+  .part-one .caption {
+    text-align: center; }
+    .part-one .caption h1 {
+      font-size: 1.75em; }
+  .part-one table {
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%; }
+    .part-one table td {
+      padding: 30px 70px 0 70px; }
+      .part-one table td h5 {
+        margin-top: 15px;
+        font-weight: bold; }
+      .part-one table td p {
+        color: #ababab;
+        font-weight: bold; }
+
+.part-two {
+  margin-top: 10%; }
+  .part-two .carousel-vertical {
+    margin-left: 15%;
+    width: 35%;
+    float: left; }
+  .part-two .text {
+    width: 35%;
+    float: right;
+    margin-right: 10%; }
+    .part-two .text p, .part-two .text li {
+      color: #ababab;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .part-two .text ul {
+      list-style-image: url(../image/point.png);
+      padding: 15px; }
+
+.part-three {
+  margin-top: 45%; }
+  .part-three .right-block, .part-three .top-block, .part-three .bottom-block {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .part-three .right-block {
+    background-image: url(../image/part3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 75vh;
+    float: right;
+    margin-right: 10%; }
+  .part-three .left-block {
+    width: 25%;
+    height: 70vh;
+    float: left;
+    margin-left: 10%; }
+    .part-three .left-block .bottom-block, .part-three .left-block .top-block {
+      height: 35vh; }
+    .part-three .left-block .bottom-block {
+      margin-top: 5vh; }
+      .part-three .left-block .bottom-block img {
+        margin-left: 150px;
+        margin-top: 20px;
+        cursor: pointer; }
+        .part-three .left-block .bottom-block img:hover {
+          opacity: 0.5; }
+    .part-three .left-block .top-block {
+      height: 35vh; }
+      .part-three .left-block .top-block button {
+        font-weight: bold;
+        margin-left: 100px;
+        margin-top: 20px; }
+        .part-three .left-block .top-block button:hover {
+          opacity: 0.5;
+          background-color: #fff; }
+    .part-three .left-block h3 {
+      color: #ababab;
+      font-size: 1.25em;
+      text-align: center;
+      padding-top: 80px; }
+
+.part-four {
+  margin-top: 90%; }
+  .part-four .caption {
+    text-align: center; }
+    .part-four .caption h1 {
+      font-size: 1.75em; }
+  .part-four .carousel .carousel-item {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 50px;
+    padding: 50px;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .part-four .carousel .carousel-item img {
+      width: 25%;
+      float: left; }
+    .part-four .carousel .carousel-item .comment {
+      width: 60%;
+      margin-right: 5%;
+      float: right; }
+      .part-four .carousel .carousel-item .comment h4 {
+        color: #404040; }
+      .part-four .carousel .carousel-item .comment h4, .part-four .carousel .carousel-item .comment h5, .part-four .carousel .carousel-item .comment p {
+        font-weight: bold; }
+      .part-four .carousel .carousel-item .comment p {
+        margin-top: 40px;
+        color: #ababab; }
+  .part-four .carousel .carousel-control-prev-icon {
+    background-image: url(../image/previous.png);
+    margin-left: 150px; }
+  .part-four .carousel .carousel-control-next-icon {
+    background-image: url(../image/next.png);
+    margin-right: 150px; }
+  .part-four .carousel .carousel-indicators {
+    position: absolute;
+    margin-top: 300px; }
+    .part-four .carousel .carousel-indicators li {
+      background-color: black; }
+
+.footer {
+  bottom: 0;
+  margin: 10% 3% 0 3%; }
+  .footer .left-footer {
+    float: left;
+    display: inline-block;
+    background-color: #ebebeb;
+    height: 30vh;
+    width: 50%;
+    color: #ababab;
+    text-align: center; }
+    .footer .left-footer h3 {
+      font-size: 1.25em;
+      margin-top: 50px; }
+  .footer .right-footer {
+    font-weight: bold;
+    float: right;
+    display: inline-block;
+    width: 50%;
+    padding-left: 50px; }
+    .footer .right-footer h2 {
+      margin-top: 50px;
+      font-size: 1.25em; }
+    .footer .right-footer p {
+      color: #ababab; }
+    .footer .right-footer .input-group-text {
+      background-color: #fff;
+      border: none;
+      cursor: pointer; }
+    .footer .right-footer .input-group {
+      width: 75%; }
+      .footer .right-footer .input-group .form-control {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid black; }
+        .footer .right-footer .input-group .form-control:focus {
+          box-shadow: none; }
+
+/*# sourceMappingURL=style.css.map */
