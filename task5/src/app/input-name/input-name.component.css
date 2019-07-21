@@ -1,0 +1,11 @@
+input[name="name"]{
+	padding: 5px;
+	width: 70%;
+	margin-top: 5%;
+	margin-left: 15%;
+	border:2px solid green;
+	border-radius: 5px;
+	color:green;
+	font-size: 1.5em;
+	outline: none;
+}

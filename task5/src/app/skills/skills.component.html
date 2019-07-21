@@ -1,0 +1,7 @@
+<div class="skills">
+	<app-input-name (changeName)="changeName($event)"></app-input-name>
+	<app-skill class="color-navy-blue" [number]="one" [nameUser] = "name" (reduceTotal)="reduceTotal()" (improveTotal) = "improveTotal()" [color] = "colorNavyBlue"></app-skill>
+	<app-skill  class="color-purple" [number]="two" [nameUser] = "name" (reduceTotal)="reduceTotal()" (improveTotal) = "improveTotal()" [color] = "colorPurple" ></app-skill>
+	<app-skill  class="color-blue" [number]="three" [nameUser] = "name" (reduceTotal)="reduceTotal()" (improveTotal) = "improveTotal()"  [color] = "colorBlue"></app-skill>
+	<app-total-skill [numberTotal]="totalCount"></app-total-skill>
+</div> 

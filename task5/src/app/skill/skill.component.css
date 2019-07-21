@@ -1,0 +1,38 @@
+.skill{
+	margin-top: 20px;
+	font-size: 1.5em;
+	margin-left: 15%;
+}
+p{
+	display: inline-block;
+	font-weight: bold;
+}
+:host-context(.color-blue) p{
+	color:#00e5ff;
+}
+:host-context(.color-blue) ::ng-deep button{
+	background-color:#00e5ff;
+}
+:host-context(.color-purple) p{
+	color:#c800ff;
+}
+:host-context(.color-purple) ::ng-deep button{
+	background-color: #c800ff;
+}
+:host-context(.color-navy-blue) p{
+	color:#2f00ff;
+}
+:host-context(.color-navy-blue) ::ng-deep button{
+	background-color:#2f00ff;
+}
+::ng-deep button{
+	border:none;
+	outline: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 0.75em;
+	color:#fff;
+	cursor: pointer;
+	margin-left: 20px;
+}
