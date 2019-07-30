@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app">
+  <app-timer-control (sendNumber)="setValue($event)"></app-timer-control>
+  <app-timer-default [value]="value"></app-timer-default>
+  <app-timer-on-push [value]="value"></app-timer-on-push>
+  <app-timer-detect-changes [value]="value"></app-timer-detect-changes>
+</div>
+
